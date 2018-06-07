@@ -1,6 +1,10 @@
 # 0.0 coding:utf-8 0.0
 import random
 
+'''
+染色体编码
+'''
+
 
 def geneEncoding(pop_size, chrom_length):
     pop = [[]]
@@ -14,8 +18,8 @@ def geneEncoding(pop_size, chrom_length):
 
 
 if __name__ == '__main__':
-    pop_size = 50		# 种群数量
-    chrom_length = 10		# 染色体长度
+    pop_size = 50  # 种群数量
+    chrom_length = 10  # 染色体长度
     pop = geneEncoding(pop_size, chrom_length)
-    print pop
-    print len(pop)
+    print(pop)
+    print(len(pop))

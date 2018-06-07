@@ -15,6 +15,9 @@ def decodechrom(pop, chrom_length):
 
 
 def calobjValue(pop, chrom_length, max_value):
+    '''
+    个体评价
+    '''
     temp1 = []
     obj_value = []
     temp1 = decodechrom(pop, chrom_length)
@@ -22,6 +25,7 @@ def calobjValue(pop, chrom_length, max_value):
         x = temp1[i] * max_value / (math.pow(2, chrom_length) - 1)
         obj_value.append(10 * math.sin(5 * x) + 7 * math.cos(4 * x))
     return obj_value
+
 
 if __name__ == '__main__':
     pass
